@@ -1,0 +1,35 @@
+{
+    "NA1_5147448576": {
+        "metadata": {
+            "dataVersion": "2",
+            "matchId": "NA1_5147448576",
+            "participants": [
+                "X33J_yK0StzfYbY-mORy-xfWOWLTlShw766plZTAKIH4Rb3CRqrF9Pvp50oYCiMaUdfavPQi8DenlQ",
+                "77ITFFdCJnYv14A1T_b1EvngE4UXnxJ0qOu1pNru_LxTjg964c19sqO1TLeLCFQ-TG9X1t_0i57WPA",
+                "TgWQ6HYb9hq14-S8hWWq_PebGl-ERUOTMysqGzUBMETXYPIqDVgZi5AufN_K1kS-_98oAjc8ypKaLQ",
+                "kLRwI29HhG6rKuhr9gDl5KRa_DS9elKmClq0GPorxFzsgkcKcnXb28PQFryWz7zQ6EHjrFPSlI4eyQ",
+                "mrRk9gQ6fdnXY6GypYjI8RTYBzQCCieNJceWOkWId3aCAFcszOUfSyFJidbFb_rO6eHeUzarxa3aDQ",
+                "se_yPLCH2TmiiNgr92o25Es-l2qgUABFic92APXt114uZ386bebNwJDlUaajxHi8koslrGNcirjsgQ",
+                "FqjXKOoU4LFuwNXSJVavZq7nt8QdUWk3HVK8o3beA1Qihz_JqL82-F_6LCsJfXaFjLWoKygs9n_1iQ",
+                "4XtdH_eOAr6m9LiMHsCV-uEU6TD3gJtokZ1lC06s6wzTQbueUu_-_Ver2p6QHbUqgzNa-I1E440CJg",
+                "aCXmuNuz0EAXnITyGw4jOXs-TgMeUSj97g0nhrHNVGNWZuySA77qdjcrbMA0YmMKkcAl5_We3_Vj7A",
+                "71j-ocCt_FjTsg2DcH1lccqgG1Ifv5riVYxxbTK-mJLAz-XgdEuufvO46Bkd0rCxZV5WL16xMwid2A"
+            ]
+        },
+        "info": {
+            "endOfGameResult": "GameComplete",
+            "frameInterval": 60000,
+            "frames": [
+                {
+                    "events": [
+                        {
+                            "realTimestamp": 1730786662881,
+                            "timestamp": 0,
+                            "type": "PAUSE_END"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
