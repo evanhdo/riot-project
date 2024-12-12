@@ -1,5 +1,5 @@
 import pandas as pd
-import requests, json, os, sys, random
+import requests, json, os, sys, random, time
 from dotenv import load_dotenv, find_dotenv
 
 #environment variables
@@ -68,14 +68,24 @@ final_df = pd.DataFrame()
 while i <= 3:
     initial_call = f"https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?start=0&count=20&api_key={api_key}"
     response = requests.get(initial_call)  # Returns the response as a Python response object
-    if response.status_code == 200:
+
+    if response.status_code == 429:  # Handle rate limiting
+        print("Rate limit hit. Pausing for 150 seconds...")
+        time.sleep(150)  # Wait for 2 minutes and 30 seconds
+        continue
+    elif response.status_code == 200:
         player_matches = response.json() 
         print(f"API call success for player {puuid}")
         m_id = random.choice(player_matches)
     
     api_url = f"https://americas.api.riotgames.com/lol/match/v5/matches/{m_id}/timeline?api_key={api_key}"
     response = requests.get(api_url)  # Returns the response as a Python response object
-    if response.status_code == 200:
+
+    if response.status_code == 429:  # Handle rate limiting
+        print("Rate limit hit. Pausing for 150 seconds...")
+        time.sleep(150)  # Wait for 2 minutes and 30 seconds
+        continue
+    elif response.status_code == 200:
         match_data = response.json() 
         print(f"API call success for match {m_id}")
     else:
